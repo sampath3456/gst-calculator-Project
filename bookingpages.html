@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bookingpage.css">
+    <title>DomSampleProject</title>
+    <link rel="stylesheet" href="domsampleproject.css">
+    
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <img src="asserts/hotel-logo.png" alt="">
+        <h2>Welcome</h2>
+    </nav>
+    
+    <section class="booking">
+        <h2>Order The Food </h2>
+        <a href="#second"> <button  id="button">OrderNow</button></a>
+    </section>
+    
+    <div id="second" > 
+    <div class="bookingspage">
+        <h2>Delicious Menu</h2>
+        <hr>
+        <div class="menu">
+            <table border="1">
+                <thead>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </thead>
+                <tbody>
+                    <td>1</td>
+                    <td>Chicken Biriyani</td>
+                    <td>150</td>
+                </tbody>
+                <tbody>
+                    <td>2</td>
+                    <td>Veg briyani</td>
+                    <td>120</td>
+                </tbody>
+                <tbody>
+                    <td>3</td>
+                    <td>chicken mandi</td>
+                    <td>300</td>
+                </tbody>
+                <tbody>
+                    <td>4</td>
+                    <td>mutton biriyani</td>
+                    <td>250</td>
+                </tbody>
+            </table><br>
+        </div>
+    </div>
+    <div>
+        <div class="orders">
+            <div class="list-items">
+                <label for="">Chicken Biriyani:</label>
+                <input type="number" placeholder="Quantity" id="quantity1">
+                <p id="CBiriyaniprice" class="sum-value">Sum Value:</p>
+            </div>
+            <div class="list-items">
+                <label >Veg Briyani:</label>
+                <input type="number" placeholder="Quantity" id="quantity2">
+                <p  id="VBiriyaniprice" class="sum-value">Sum Value:</p>
+            </div>
+            <div class="list-items">
+
+                <label for="">Chicken Mandi:</label>
+                <input type="number" placeholder="Quantity" id="quantity3">
+                <p id="Chickenmandi" class="sum-value">Sum Value:</p>
+            </div>
+            <div class="list-items">
+
+                <label for="">Mutton Biriyani:</label>
+                <input type="number" placeholder="Quantity" id="quantity4">
+                <p id="MBiriyaniprice" class="sum-value">Sum Value:</p>
+            </div>
+        </div>
+        <div class="Btncon">
+            <button id="bill-button" >Print Bill</button>
+        </div>
+    </div>
+    <div id="BilliSection">
+        <h3 >  Bill Without GST:  <span  id="BillWithoutGST" ></span></h3>
+        <h3 >GST Amount:  <span  id="GSt_Amount"></span> </h3>
+        <h2  >Total Bill including GST:  <span id="FinalBill"></span></h2>
+    </div>
+</div>
+
+
+
+
+    <script src="domsampleproject.js"></script>
+</body>
+
+</html>
